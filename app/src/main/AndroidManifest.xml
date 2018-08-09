@@ -20,6 +20,11 @@
         android:theme="@style/AppTheme"
         android:name=".app.App">
 
+        <!--xposed相关变量添加-->
+        <meta-data android:name="xposedmodule" android:value="true" />
+        <meta-data android:name="xposeddescription" android:value="the xposed param setting." />
+        <meta-data android:name="xposedminversion" android:value="54" />
+
         <!-- android:screenOrientation="portrait" 限制只能竖屏显示 -->
         <!--关闭软键盘自动弹出-->
         <activity android:name=".view.MainActivity"
